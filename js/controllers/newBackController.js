@@ -3,6 +3,7 @@ export function newBackController() {
     const addTile = document.querySelector('.add-tile');
     const deleteTile = document.querySelector('.delete-tile');
     const deleteNewBack = document.querySelectorAll('.delete-new-back');
+    const deleteReflect = document.querySelector('.delete-reflect');
 
     addTile.addEventListener('click', () => {
         const title = prompt('Введите заголовок');
@@ -25,6 +26,10 @@ export function newBackController() {
         if (list.lastElementChild) {
             list.removeChild(list.lastElementChild);
         }
+    })
+
+    deleteReflect.addEventListener('click', () => {
+        deleteReflect.parentElement.remove()
     })
 
     deleteNewBack.forEach((btn) => {

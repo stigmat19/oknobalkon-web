@@ -1222,6 +1222,13 @@ h5 {
     flex-direction: row-reverse;
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
+}
+
+.our-advantages.reflect .delete-reflect{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .our-advantages .p-big{
