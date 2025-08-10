@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KHZQJ6LG');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Установка рольштор</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="roller-blinds">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHZQJ6LG"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-img">
+
+        </div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form action="">
+                <h3>Один звонок до балкона вашей мечты </h3>
+                <p>Для получения бесплатного замера оставьте онлайн заявку и мы перезвоним вам в ближайшее время!</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="myModalGift" class="modal">
+    <div class="modal-content gift">
+        <div class="modal-img"></div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form>
+                <h3>Дарим подарки! </h3>
+                <p>Закажите отделку балкона под ключ и выбирайте один из подарков! Просто отправьте заявку и мы свяжемся
+                    с вами в ближайшее время.</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal" id="vacancyModal">
+    <div class="modal-content">
+        <div class="vacancy">
+            <span class="close">&times;</span>
+            <form action="">
+                <h3><b class="yellow_back"> Работа </b> в OKNOBALKON </h3>
+                <h5>Мы постоянно растем и расширяемся, поэтому нам нужны новые кадры </h5>
+                <p>Готовы предоставить самые лучшие условия, оказать помощь в карьерном росте и заработке. Если вы
+                    квалифицированный специалист по установке окон ПВХ, алюминиевых рам, или вы мастер по отделке
+                    балконов — мы всегда рассмотрим вашу вакансию.</p>
+                <p>А может вы просто умеете держать перфоратор в руках и желаете стать мастером — можем предложить вам
+                    обучение.</p>
+                <h5>Отправьте заявку и мы свяжемся с вами в ближайшее время!</h5>
+                <div class="input-fields-vacancy">
+
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+                    <input type="hidden" name="type" value="Вакансии">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                </div>
+                <div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a class="border" href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="modalThanks"  class="modal-thanks">
+    <div class="modal-content">
+        <h3>Ваша заявка отправлена!</h3>
+        <p class="p-big">Наш менеджер свяжется с вами в ближайшее время</p>
+    </div>
+</div>
+
+
+
+<div class="header container">
+    <a href="index.html"><span class="logo"><img src="img/logo.png" alt=""></span></a>
+    <ul>
+        <li class="dropdown">
+            <button id="dropdownBtn" class="dropbtn">Услуги <img id="arrowIcon" src="img/icons/arrow-down.svg" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="finishing-of-balconies.html">Отделка балконов</a>
+                <a href="windows-frames.html">Окна и рамы</a>
+                <a href="window-repair.html">Ремонт окон</a>
+                <a href="furniture-balconies.html">Мебель для балконов</a>
+                <a href="roller-blinds.html">Роль шторы</a>
+            </div>
+        </li>
+        <li><a href="our-works.html">Наши работы</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="for-company.html">О компании</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <div class="header-controls">
+        <div class="header_phone-btn-adapt">
+            <a href="tel:+375295542440"></a>
+        </div>
+        <div class="header_phone-btn">
+            <a href="tel:+375295542440">
+                +375 (29) 554-24-40
+            </a>
+        </div>
+        <span class="burger">
+            <div id="burgerIcon"></div>
+            <div id="icon_close"></div>
+            <!--            <img id="burgerIcon" src="img/icons/burger.svg" alt="" width="40">-->
+            <!--            <img id="icon_close" src="img/icons/icon_close.svg" alt="" width="40">-->
+        </span>
+    </div>
+</div>
+<div class="container headline">
+    <h1>Установка <b class="yellow_back">рольштор</b></h1>
+</div>
+<div class="finishing container">
+
+    <div class="finishing_text">
+        <h1>Установка <b class="yellow_back">рольштор</b></h1>
+        <p class="p-big">Рулонные шторы защитят мебель от палящего солнца, а также обеспечат приятное затемнение в помещении и станут его дополнительным украшением. Изготовим рольшторы согласно размерам ваших окон и подберём расцветку, которая будет соответствовать интерьеру помещения.<br>
+          <br>  Закажите консультацию и получите предварительный расчет стоимости отделки вашего балкона!</p>
+        <ul>
+            <li><img src="img/icons/icon_measure.svg" alt="">Бесплатный замер</li>
+            <li><img src="img/icons/group-1.svg" alt="">Качественные отделочные материалы</li>
+            <li><img src="img/icons/icon_builder.svg" alt="">Опытные специалисты</li>
+        </ul>
+        <div class="black-btn">
+            <button class="signUp">Записаться на бесплатный замер</button>
+        </div>
+    </div>
+    <div class="finishing_img">
+
+    </div>
+
+
+</div>
+<div class="finishing_btn container">
+    <div class="black-btn">
+        <button class="signUp">Записаться на бесплатный замер</button>
+    </div>
+    <div class="roller_block-adapt container">
+
+    </div>
+</div>
+<div class="execution yellow-background">
+    <div class="container">
+        <h3 class="species_adapt">Устанавливаем различные виды рулонных штор</h3>
+
+        <ul>
+            <li class="species-roller"><h3>Устанавливаем различные виды рулонных штор</h3></li>
+            <li>
+                <h5>Стандарт</h5>
+                <p class="p-big">Цена от 49 руб</p>
+            </li>
+            <li>
+                <h5>День - Ночь</h5>
+                <p class="p-big">Цена от 59 руб</p>
+            </li>
+            <li>
+                <h5>Blackout</h5>
+                <p class="p-big">Цена от 75 руб</p>
+            </li>
+
+        </ul>
+        <h5><b class="yellow_back">Цена включает</b> стоимость работ и материалов под ключ</h5>
+    </div>
+</div>
+<div class="promotion container">
+    <h2>АКЦИЯ МЕСЯЦА</h2>
+    <h4>
+        <b class="yellow_back">Гарантированные подарки</b><br>
+        при заказе отделки балкона под ключ!
+    </h4>
+    <div class="black-btn">
+        <button id="btnDetails">
+            Узнать подробнее
+        </button>
+    </div>
+</div>
+<div class="stages_of_work container">
+    <h4>Этапы работы</h4>
+    <ul>
+        <li>
+            <img src="img/icons/icon_phone.svg" alt="" width="48" height="48">
+            <h4><b>Звонок</b></h4>
+            <p class="p-big">Проконсультируем вас по всем вопросам и примем заявку</p>
+        </li>
+        <li>
+            <img src="img/icons/icon_measure-black.svg" alt="" width="48" height="48">
+            <h4><b>Замер</b></h4>
+            <p class="p-big">Бесплатный выезд специалиста, расчет стоимости и создание дизайн-проекта</p>
+        </li>
+        <li>
+            <img src="img/icons/agreement.svg" alt="" width="48" height="48">
+            <h4><b>Договор</b></h4>
+            <p class="p-big">Прописываем сроки, фиксируем окончательную стоимость</p>
+        </li>
+        <li>
+            <img src="img/icons/installation.svg" alt="" width="48" height="48">
+            <h4><b>Монтаж</b></h4>
+            <p class="p-big">Выполняем работы под ключ. Убираем помещение от строительного мусора.</p>
+        </li>
+    </ul>
+</div>
+<div class="examples yellow-background">
+    <div class="container">
+        <h4>ПРИМЕРЫ НАШИХ РАБОТ</h4>
+        <div class="swiper-container-2-wrapper">
+            <div class="swiper-container-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Теплое остекление</li>
+                                <li>Утепление холодных поверхностей</li>
+                                <li>Отделка ламинатом</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Тумба, шкаф, откидной столик</li>
+                                <li>Рольшторы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Обшивка вагонкой</li>
+                                <li>Укладка линолеума</li>
+                                <li>Тумбочки</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Подоконники пластиковые</li>
+                                <li>Потолок из ПВХ панелей</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Теплое остекление</li>
+                                <li>Утепление холодных поверхностей</li>
+                                <li>Отделка ламинатом</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Тумба, шкаф, откидной столик</li>
+                                <li>Рольшторы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Обшили балкон ПВХ панелями</li>
+                                <li>Утепление холодных стен</li>
+                                <li>Постелили линолеум</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Установили тумбу с полками</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Отделка ламинатом и камнем</li>
+                                <li>Утепление холодных стен</li>
+                                <li>Установка премиум подоконника</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Шкаф с полками</li>
+                                <li>Устройство теплого пола</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Укрепили ограждения балкона</li>
+                                <li>Утеплили холодные поверхности</li>
+                                <li>Установили пластиковую раму</li>
+                                <li>Обшили стены евровагонкой</li>
+                                <li>Обшили потолок ПВХ панелями</li>
+                                <li>Установили рольшторы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Установка пластиковой рамы</li>
+                                <li>Утепление холодных поверхностей</li>
+                                <li>Обшивка евровагонкой</li>
+                                <li>Обшивка вагонкой «штиль»</li>
+                                <li>Пропитка дерева лаком</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Теплое остекление</li>
+                                <li>Утепление холодных поверхностей</li>
+                                <li>Отделка ламинатом</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Тумба, шкаф, откидной столик</li>
+                                <li>Рольшторы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Теплое остекление рамой ПВХ</li>
+                                <li>Утепление холодных поверхностей</li>
+                                <li>Отделка ламинатом</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Сидушка ларь</li>
+                                <li>Установка премиум подоконника</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li> Установка пластиковой рамы</li>
+                                <li>Утепление холодных поверхностей</li>
+                                <li>Обшивка ламинатом</li>
+                                <li> Потолочные светильники, розетки</li>
+                                <li>Шкаф, откидной столик</li>
+                                <li>Обшивка потолка ПВХ панелями</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Алюминиевая рама</li>
+                                <li>Наружная отделка виниловым сайдингом</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li> Установили алюминиевую раму с тонированными стеклами</li>
+                                <li> Смонтировали независимую крышу</li>
+                                <li> Выполнили наружную отделку профильным оцинкованным листом</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li> Установили раму ПВХ и балконную группу</li>
+                                <li> Обшили широкой вагонкой под покраску</li>
+                                <li> Постелили ламинат 33 класса</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Установка алюминиевой рамы в пол с матовыми стеклами</li>
+                                <li>Выполнили черновой пол с дренажными отверстиями под слив</li>
+                                <li>Уложили плитку из дерева</li>
+                                <li>Подшили потолок и заднюю стенку балкона</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Установили алюминиевую раздвижную раму в пол</li>
+                                <li>  Смонтировали крышу мягкую кровлю на деревянном каркасе</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>
+                                    Монтаж независимой крыши из профильного листа с металлической трубой в качестве обрешетки
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>
+                                    Вынесли балкон металлическим уголком для дальнейшего остекления
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>  Установка рамы ПВХ</li>
+                                <li>  Утепление холодных стен</li>
+                                <li> Обшивка ПВХ панелями</li>
+                                <li>  Укладка на пол OSB-плиты и линолеума</li>
+                                <li>  Потолочные светильники, розетки</li>
+                                <li> Установили сушилку для белья</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li> Установили теплую раму ПВХ</li>
+                                <li> Смонтировали крышу</li>
+                                <li> Утеплили пол, потолок, парапет</li>
+                                <li> Обшили балкон вагонкой</li>
+                                <li>  Выполнили пол из доски 32мм</li>
+                                <li> Покрыли вагонку лаком по дереву</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+
+                                <li>Установили теплую раму ПВХ</li>
+                                <li>Смонтировали крышу</li>
+                                <li>Утеплили пол и холодные стены</li>
+                                <li>Обшили балкон вагонкой</li>
+                                <li>Выполнили напольное покрытие из доски 32 мм</li>
+                                <li>Покрыли вагонку лаком по дереву</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Установили пластиковую раму и балконную группу из профиля KBE</li>
+                                <li>Утеплили холодные стены</li>
+                                <li>Обшивка ПВХ панелями</li>
+                                <li>Уложили линолеум на пол</li>
+                                <li>Подключили освещение</li>
+                                <li>Сидушка с откидным верхом</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Выполнили теплое остекление пластиковой рамой</li>
+                                <li>Установили фурнитуру</li>
+                                <li>Выполнили покраску</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Утеплили стены по типу THERMOS</li>
+                                <li>Обшили стены и потолок вагонкой</li>
+                                <li>Обшили передний бордюр камнем</li>
+                                <li>Выполнили покраску бордюра</li>
+                                <li>Уложили черновой пол OSB-плиту</li>
+                                <li>Постелили линолеум 33 класса</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+
+                                <li>Установили пластиковую раму</li>
+                                <li>Установили балконную группу</li>
+                                <li>Утеплили холодные стены</li>
+                                <li>Обшили стены вагонкой и камнем</li>
+                                <li>Обшили потолок ПВХ панелями, уложили ламинат на пол</li>
+                                <li>Смонтировали освещение</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Укрепили ограждения балкона</li>
+                                <li>Утеплили холодные поверхности</li>
+                                <li>Установили пластиковую раму</li>
+                                <li>Обшили стены евровагонкой</li>
+                                <li>Обшили потолок ПВХ панелями</li>
+                                <li>Установили рольшторы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Комбинированная отделка ламинатом и декоративным камнем</li>
+                                <li>Установили подоконники</li>
+                                <li>Утеплили холодные стены</li>
+                                <li>Установили шкаф с полками</li>
+                                <li>Потолочные светильники, розетки</li>
+                                <li>Устройство теплого пола</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <span>Отделка балкона под ключ</span>
+                            <ul>
+                                <li>Установили сидушку с откидным верхом из массива дерева</li>
+                                <li>Установили шкаф из жалюзийных фасадов с полками</li>
+                                <li>Изготовили мягкие подушки и матрас</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
+<div class="question container">
+    <form action="">
+        <h3>Остались вопросы?</h3>
+        <h5>Оставьте онлайн заявку на бесплатную консультацию. Наши менеджеры свяжутся с вами, ответят на все вопросы и
+            подберут лучший вариант.</h5>
+                <div class="input-fields-finishing">
+                    <input type="text" id="name" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" id="phone" name="phone" required="" placeholder="Введите номер телефона">
+                    <button type="submit">Отправить заявку</button>
+                </div>
+        <p>Нажимая на кнопку, я соглашаюсь с условиями <a class="policy" href="#">политики конфиденциальности</a></p>
+
+    </form>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_logo-adapt">
+            <img src="img/logo.png" alt="" width="150" height="40">
+        </div>
+        <div class="footer-links">
+            <div>
+
+                <ul>
+                    <li class="footer_logo">
+                        <img src="img/logo.png" alt="" width="150" height="40">
+                    </li>
+
+                    <li>
+                        г. Минск, ул. Масюковщина, 44
+                    </li>
+                    <li>
+                        Работаем ежедневно с 8.00 до 21.00
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/oknobalkon.by?igsh=MTh4bHZkNWZhYTI0Zg=="> <img
+                                src="img/icons/icon_instagram.svg" alt=""> Мы в Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/viktorminutka">
+                            <img src="img/icons/icon_telegram.svg" alt="Telegram"> Мы в Telegram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h5>УСЛУГИ</h5>
+                    </li>
+                    <li>
+                        <a href="finishing-of-balconies.html">Отделка балконов</a>
+                    </li>
+                    <li>
+                        <a href="windows-frames.html">Окна и рамы</a>
+                    </li>
+                    <li>
+                        <a href="window-repair.html">Ремонт окон</a>
+                    </li>
+                    <li>
+                        <a href="furniture-balconies.html">Мебель для балконов</a>
+                    </li>
+                    <li>
+                        <a href="roller-blinds.html">Роль шторы</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="our-works.html">НАШИ РАБОТЫ</a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li>
+                        <a href="for-company.html">О КОМПАНИИ</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">КОНТАКТЫ</a>
+                    </li>
+                    <li id="vacancy">
+                        <a>ФОРМА ВАКАНСИИ</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer_contacts">
+                    <li>
+                        <h3>
+                            <a href="tel:+375295542440">
+                                +375 (29) 554-24-40
+                            </a>
+                        </h3>
+                        <h4><a href="mailto:oknobalkon2@mail.ru">oknobalkon2@mail.ru</a></h4>
+                    </li>
+                    <li>
+                        <button class="footer_btn signUp">
+                            Заказать звонок
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_btn-adapt">
+            <button class="signUp">
+                Заказать звонок
+            </button>
+        </div>
+        <div class="copyright_field">
+
+            <div class="copyright"><img src="img/icons/icon_copyright.svg" width="24px" height="24px" alt=""><a
+                    href="#"><p>Политика конфиденциальности</p></a></div>
+            <p>2024 OKNOBALKON. Все права защищены</p>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

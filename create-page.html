@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/create-page.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+    <label class="no-send">
+        Введите название страницы на английском, так же будет называться сам файл и соответственно ссылка
+        <input type="text" name="pageName" style="border: 1px solid black">
+    </label>
+
+    <div id="editModal" class="modal no-send" style="display:none;">
+        <div class="modal-content">
+        <span id="closeBtn">&times;</span>
+            <div contenteditable="true" id="editableDiv" class="editableDiv">
+                Здесь текст для редактирования...
+            </div>
+
+            <div class="modal-footer">
+                <button id="saveBtn">Сохранить</button>
+                <button id="cancelBtn">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <button id="clear" class="no-send">Сбросить</button>
+
+    <div class="container">
+        <div class="crumbs">
+            <p>
+                <a href="#" class="editableText">Главная</a> &gt;
+                <a href="#" class="editableText">Установка рольштор </a> &gt;
+                <a href="#" class="editableText">Стандарт</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="new-question manufacturing container">
+        <div class="manufacturing-text">
+            <h3 id="title1" class="editableText">
+                Изготовление и установка мебели для балконов и лоджий
+            </h3>
+            <h5 id="title2" class="editableText">Уникальная возможность создать уютный уголок для отдыха, хранения вещей или даже рабочего места.</h5>
+            <div class="black-btn-2">
+                <button>Записаться на бесплатный замер</button>
+            </div>
+        </div>
+        <div class="manufacturing-img">
+            <img class="uploadImage" src="uploads/image1.png" style="cursor:pointer;" alt="!!!! Загружать картинки только в png !!!!" />
+            <input class="fileInput" type="file" name="image1" accept="image/*" style="display:none;">
+        </div>
+    </div>
+
+    <div class="container our-advantages">
+        <div class="our-advantages-img">
+            <div class="manufacturing-img">
+                <img class="uploadImage" src="uploads/image2.jpg" style="cursor:pointer;" alt="!!!! Загружать картинки только в jpg !!!!" />
+                <input class="fileInput" type="file" name="image2" accept="image/*" style="display:none;">
+            </div>
+        </div>
+        <div class="our-advantages-text">
+            <h3 class="editableText">
+                Почему стоит выбрать мебель из ЛДСП
+            </h3>
+
+            <ul>
+                <li class="editableText">
+                    <img src="../img/icons/Vector.png" height="30" width="30"/>
+                    <p>Опыт и надежность. Более чем 15-летний опыт в сфере ремонта балконов и лоджий, что позволяет нам
+                        предлагать только лучшие решения.</p>
+                </li>
+            </ul>
+
+            <button class="add no-send">Добавить</button>
+            <button class="delete no-send">Удалить</button>
+        </div>
+    </div>
+
+    <div class="new-back">
+        <div class="container">
+            <div class="models-title">
+                <h3 class="editableText">Разнообразие моделей и материалов </h3>
+                <p class="editableText">Мы предлагаем широкий ассортимент роль-штор, которые подойдут для любого стиля и дизайна</p>
+            </div>
+            <div class="models-list">
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li><h5>Роль-Шторы Стандарт</h5></li>
+                        <li><p>Наиболее популярный выбор благодаря своей доступной цене, простоте установки и широкому
+                            ассортименту цветов и текстур материалов. Их надежная конструкция и легкость в использовании
+                            обеспечивают долгий срок службы без проблем.</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>2</li>
+                        <li><h5>Роль-шторы День-Ночь</h5></li>
+                        <li><p>Идеальный выбор для тех, кто хочет регулировать уровень освещения. Эти шторы состоят из
+                            чередующихся полос прозрачной и непрозрачной ткани, что позволяет легко менять атмосферу в
+                            помещении.</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>3</li>
+                        <li><h5>Роль-шторы Blackout</h5></li>
+                        <li><p>Обеспечивают полную защиту от света, что делает их отличным вариантом для спален или домашних
+                            кинотеатров.</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>4</li>
+                        <li><h5>Роль-шторы с принтами</h5></li>
+                        <li><p>Мебель для отдыха или работы, которая легко вписывается в любой интерьер.</p></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="add-tile no-send">Добавить</button>
+            <button class="delete-tile no-send">Удалить</button>
+        </div>
+    </div>
+
+    <div class="container our-advantages reflect">
+        <div class="our-advantages-img">
+            <div class="manufacturing-img">
+                <img class="uploadImage" src="uploads/image3.jpg" style="cursor:pointer;" alt="!!!! Загружать картинки только в jpg !!!!" />
+                <input class="fileInput" type="file" name="image3" accept="image/*" style="display:none;">
+            </div>
+        </div>
+        <div class="our-advantages-text">
+            <h3 class="editableText">
+                Почему стоит выбрать мебель из ЛДСП
+            </h3>
+            <span class="our-advantages-text-del no-send">Удалить</span>
+            <p class="p-big editableText">Ламинированная древесно-стружечная плита (ЛДСП) — это современный и практичный материал,
+                который обладает множеством преимуществ:</p>
+
+            <ul>
+                <li>
+                    <img src="../img/icons/Vector.png" height="30" width="30">
+                    <p>Опыт и надежность. Более чем 15-летний опыт в сфере ремонта балконов и лоджий, что позволяет нам
+                        предлагать только лучшие решения.</p>
+                </li>
+
+                <li>
+                    <img src="../img/icons/Vector.png" height="30" width="30">
+                    <p>Индивидуальный подход. Мы учитываем ваши пожелания и помогаем выбрать идеальный вариант.</p></li>
+                <li>
+                    <img src="../img/icons/Vector.png" height="30" width="30">
+                    <p>Инновационные технологии. Мы применяем современные технологиии и материалы, которые обеспечивают
+                        долговечность и надежность наших изделий.</p>
+                </li>
+                <li>
+                    <img src="../img/icons/Vector.png" height="30" width="30">
+                    <p>Гарантия качества. Мы уверены в качестве нашей работы и предоставляем гарантии на все выполненные
+                        услуги
+                        и материалы.</p>
+                </li>
+            </ul>
+
+            <button class="add no-send">Добавить</button>
+            <button class="delete no-send">Удалить</button>
+        </div>
+    </div>
+
+    <div class="new-back">
+        <button class="delete-new-back no-send">Удалить</button>
+        <div class="with-us container">
+            <div class="with-us-text">
+                <h3>Почему вам стоит выбрать
+                    <a href="#">
+                        <span class="yellow_text">OKNOBALCON.BY</span>
+                    </a>
+                </h3>
+            </div>
+            <div class="with-us-text-2">
+                <p class="p-big editableText">
+                    С более чем 15-летним опытом в комплексном ремонте балконов и лоджий, предлагаем вам идеальное решение —
+                    изготовление и установку мебели из ЛДСП, включая шкафы, которые идеально впишутся в ваш интерьер.
+                </p>
+                <div>
+                <span>
+                    <h2>15+</h2>
+                    <h5>Лет<br> на рынке</h5>
+                </span>
+                    <span>
+                    <h2>1500+</h2>
+                    <h5>Выполненных<br> проектов</h5>
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button class="delete-new-back no-send">Удалить</button>
+        <div class="with-us container">
+            <div class="with-us-text">
+                <p class="p-big editableText">
+                    С OKNOBALCON.BY вы получаете не только качественные
+                    роль-шторы, но и полный комплекс услуг по их изготовлению и монтажу.
+                </p>
+
+                <div>
+            <span>
+                <h2>15+</h2>
+                <h5>Лет<br> на рынке</h5>
+            </span>
+                    <span>
+                <h2>1500+</h2>
+                <h5>Выполненных<br> проектов</h5>
+            </span>
+                </div>
+            </div>
+            <div class="with-us-image">
+                <div class="manufacturing-img">
+                    <img class="uploadImage" src="uploads/image4.jpg" style="cursor:pointer;" alt="!!!! Загружать картинки только в jpg !!!!" />
+                    <input class="fileInput" type="file" name="image4" accept="image/*" style="display:none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="new-question container">
+        <form action="">
+            <h3 class="editableText">Не упустите возможность преобразить ваше пространство с помощью стильных и функциональных роль-штор</h3>
+            <h5 class="editableText">Наши специалисты помогут вам выбрать идеальные шторы и быстро осуществят их монтаж. Сделайте шаг к уюту и
+                комфорту уже сегодня!</h5>
+            <div class="input-fields-finishing">
+                <input type="text" id="name" name="name" required="" placeholder="Введите имя">
+                <input type="tel" id="phone" name="phone" required="" placeholder="Введите номер телефона">
+                <button type="submit">Отправить заявку</button>
+            </div>
+            <p>Нажимая на кнопку, я соглашаюсь с условиями <a class="policy" href="#">политики конфиденциальности</a></p>
+
+        </form>
+    </div>
+
+    <button class="send-page no-send">Сохранить</button>
+    <br>
+    <br>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

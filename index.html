@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KHZQJ6LG');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Balcony</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHZQJ6LG"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="modal_vid">
+    <div class="modal_content_vid">
+        <span class="close_vid">&times;</span>
+        <video class="modal_video_vid">
+            <source src="video-reviews/review-1.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-img">
+
+        </div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form>
+                <h3>Один звонок до балкона вашей мечты </h3>
+                <p>Для получения бесплатного замера оставьте онлайн заявку и мы перезвоним вам в ближайшее время!</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="myModalGift" class="modal">
+    <div class="modal-content gift">
+        <div class="modal-img"></div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form>
+                <h3>Дарим подарки! </h3>
+                <p>Закажите отделку балкона под ключ и выбирайте один из подарков! Просто отправьте заявку и мы свяжемся
+                    с вами в ближайшее время.</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal" id="vacancyModal">
+    <div class="modal-content">
+        <div class="vacancy">
+            <span class="close">&times;</span>
+            <form action="">
+                <h3><b class="yellow_back"> Работа </b> в OKNOBALKON </h3>
+                <h5>Мы постоянно растем и расширяемся, поэтому нам нужны новые кадры </h5>
+                <p>Готовы предоставить самые лучшие условия, оказать помощь в карьерном росте и заработке. Если вы
+                    квалифицированный специалист по установке окон ПВХ, алюминиевых рам, или вы мастер по отделке
+                    балконов — мы всегда рассмотрим вашу вакансию.</p>
+                <p>А может вы просто умеете держать перфоратор в руках и желаете стать мастером — можем предложить вам
+                    обучение.</p>
+                <h5>Отправьте заявку и мы свяжемся с вами в ближайшее время!</h5>
+                <div class="input-fields-vacancy">
+
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+                    <input type="hidden" name="type" value="Вакансии">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                </div>
+                <div class="confedentional">
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a class="border" href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="modalThanks" class="modal-thanks">
+    <div class="modal-content">
+        <h3>Ваша заявка отправлена!</h3>
+        <p class="p-big">Наш менеджер свяжется с вами в ближайшее время</p>
+    </div>
+</div>
+
+<div class="header container">
+    <a href="index.html"><span class="logo"><img src="img/logo.png" alt=""></span></a>
+    <ul>
+        <li class="dropdown">
+            <button id="dropdownBtn" class="dropbtn">Услуги <img id="arrowIcon" src="img/icons/arrow-down.svg" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="finishing-of-balconies.html">Отделка балконов</a>
+                <a href="windows-frames.html">Окна и рамы</a>
+                <a href="window-repair.html">Ремонт окон</a>
+                <a href="furniture-balconies.html">Мебель для балконов</a>
+                <a href="roller-blinds.html">Роль шторы</a>
+            </div>
+        </li>
+        <li><a href="our-works.html">Наши работы</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="for-company.html">О компании</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <div class="header-controls">
+        <div class="header_phone-btn-adapt">
+            <a href="tel:+375295542440"></a>
+        </div>
+        <div class="header_phone-btn">
+            <a href="tel:+375295542440">
+                +375 (29) 554-24-40
+            </a>
+        </div>
+        <span class="burger">
+            <div id="burgerIcon"></div>
+            <div id="icon_close"></div>
+            <!--            <img id="burgerIcon" src="img/icons/burger.svg" alt="" width="40">-->
+            <!--            <img id="icon_close" src="img/icons/icon_close.svg" alt="" width="40">-->
+        </span>
+    </div>
+</div>
+<div class="main_block container">
+    <h1>
+        Комплексный ремонт балконов<br class="transfer"> и лоджий под ключ
+    </h1>
+    <h4>Выполним за 2-3 дня<br>
+        Минск и Минский район</h4>
+
+    <div class="yellow-btn">
+        <button class="signUp">
+            Записаться на бесплатный замер
+        </button>
+    </div>
+</div>
+<div class="service_block yellow-background">
+    <div class="container">
+        <div class="yellow_text-adapt">
+            <ul>
+                <li>
+                    <h5>КАЧЕСТВО</h5>
+                    <p>
+                        Используем материалы высокого качества,
+                        в долговечности и эффективности которых
+                        мы уверенны
+                    </p>
+                </li>
+                <li>
+                    <h5>КОНТРОЛЬ</h5>
+                    <p>
+                        Собственное производство с полным контролем
+                        всего цикла изготовления изделий
+                    </p>
+                </li>
+                <li>
+                    <h5>ГАРАНТИИ</h5>
+                    <p>
+                        Заключение официального договора,
+                        предоставление гарантий после
+                        выполнения работ
+                    </p>
+                </li>
+                <li>
+                    <h5>СРОКИ</h5>
+                    <p>
+                        Для удобства клиентов выполняем
+                        заказы в максимально сжатые сроки
+                    </p>
+                </li>
+            </ul>
+            <div class="yellow_text">
+                <span>
+                    <h2>15+</h2>
+                    <h4>Лет на рынке</h4>
+                </span>
+                <span>
+                    <h2>1500</h2>
+                    <h4>Выполненных проектов</h4>
+                </span>
+            </div>
+        </div>
+        <div class="exp">
+            <h4>
+                <b class="yellow_text">OKNOBALKON</b> — команда профессионалов в сфере
+                ремонта и отделки балконов и лоджий
+            </h4>
+            <div>
+                <span>
+                    <h2>15+</h2>
+                    <h4>Лет<br> на рынке</h4>
+                </span>
+                <span>
+                    <h2>1500</h2>
+                    <h4>Выполненных<br> проектов</h4>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="our_services container">
+    <h4>НАШИ УСЛУГИ</h4>
+
+    <div class="our_services-windows">
+
+        <a href="finishing-of-balconies.html"><h5>Отделка балконов</h5> <img src="img/icons/arrow-right.svg"
+                                                                             alt=""> </a>
+        <a href="windows-frames.html"><h5>Окна и рамы</h5><img src="img/icons/arrow-right.svg" alt=""></a>
+        <a href="window-repair.html"><h5>Ремонт окон</h5><img src="img/icons/arrow-right.svg" alt=""></a>
+        <a href="furniture-balconies.html"><h5>Мебель для балконов</h5><img src="img/icons/arrow-right.svg"
+                                                                            alt=""></a>
+        <a href="roller-blinds.html"><h5>Роль шторы</h5><img src="img/icons/arrow-right.svg" alt=""></a>
+    </div>
+
+</div>
+<div class="promotion container">
+    <h2>АКЦИЯ МЕСЯЦА</h2>
+    <h4>
+        <b class="yellow_back">Гарантированные подарки</b><br>
+        <p>при заказе отделки балкона под ключ!</p>
+    </h4>
+    <div class="black-btn">
+        <button id="btnDetails">
+            Узнать подробнее
+        </button>
+    </div>
+</div>
+<div class="about_the_company yellow-background">
+    <div class="container">
+        <div class="about_the_company-text">
+            <h4>Почему вам стоит выбрать<br> <b class="yellow_text">OKNOBALKON</b></h4><br>
+            <p>
+                Меня зовут Виктор Минютка и я являюсь учредителем и директором компании OKNOBALKON. Каждый проект и
+                каждый
+                монтаж, который выполняется нашей компанией,<br> <span>находится под моим личным контролем.</span>
+            </p>
+            <br>
+            <p>Вы всегда можете быть уверены в том, что ни один из вопросов не останется без внимания. Мы сделаем ваш
+                балкон
+                самой уютной комнатой в квартире.</p>
+
+            <a href="for-company.html">О компании &rarr;</a>
+        </div>
+        <div class="about_the_company-img">
+
+        </div>
+    </div>
+</div>
+<div class="manufacturers container">
+    <h4>РАБОТАЕМ С НАДЕЖНЫМИ ПРОИЗВОДИТЕЛЯМИ</h4>
+    <div class="manufacturers_logo">
+        <ul>
+            <li><img src="img/logo-partner/logo_partner.png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (1).png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (2).png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (3).png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (4).png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (5).png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (6).png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (7).png" alt=""></li>
+            <li><img src="img/logo-partner/logo_partner (8).png" alt=""></li>
+        </ul>
+    </div>
+    <div class="manufacturers_logo-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (1).png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (2).png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (3).png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (4).png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (5).png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (6).png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (7).png" alt=""></div>
+                <div class="swiper-slide"><img src="img/logo-partner/logo_partner (8).png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="contacts container">
+    <form action="#">
+        <h3>
+            Один звонок до балкона вашей мечты
+        </h3>
+        <h4>
+            Оставьте онлайн заявку на бесплатную консультацию. Ответим на все вопросы и подберём лучший вариант.
+        </h4>
+        <div class="input-fields">
+            <input type="text" id="name" name="name" required placeholder="Введите имя">
+            <input type="tel" id="phone" name="phone" required placeholder="Введите номер телефона">
+
+            <div class="black-btn">
+                <button type="submit">Отправить заявку</button>
+            </div>
+            <p>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></p>
+        </div>
+    </form>
+    <div class="contacts_img">
+        <img src="img/img-1.jpg" alt="">
+        <img src="img/img-2.jpg" alt="">
+    </div>
+</div>
+<div class="opinion yellow-background">
+    <div class="container">
+        <h4>
+            МНЕНИЯ НАШИХ КЛИЕНТОВ
+        </h4>
+
+        <div class="customer_opinion">
+            <ul>
+                <li>
+                    <div>
+                        <img src="img/avatar/avatar.png" alt="">
+                        <div>
+                            <h5>Анна, г. Минск</h5>
+                            <div class="stars_field"></div>
+                        </div>
+                    </div>
+                    <p>
+                        Большое спасибо Виктору. Очень довольна его работой, мастер замечательный. Всем рекомендую, все
+                        сделано по высшему разряду. Спасибо!
+                    </p>
+                    <a href="#" data-video="video-reviews/review-10.mp4">Смотреть видео отзыв &rarr;</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/avatar/avatar-2.png" alt="">
+                        <div>
+                            <h5>Сергей, г. Минск</h5>
+                            <div class="stars_field"></div>
+                        </div>
+                    </div>
+                    <p>
+                        Спасибо за проделанную работу! Качеством балкона доволен. Все очень нравится, рекомендую!
+                    </p>
+                    <a href="#" data-video="video-reviews/review-3.mp4">Смотреть видео отзыв &rarr;</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/avatar/avatar-3.png" alt="">
+                        <div>
+                            <h5>Татьяна, г. Минск</h5>
+                            <div class="stars_field"></div>
+                        </div>
+                    </div>
+                    <p>
+                        Быстрый и качественный ремонт. Делали окна и шкафы. Шкафы не только очень красивые, но и
+                        удобные, и крепкие. Обращайтесь к Виктору!
+                    </p>
+                    <a href="#" data-video="video-reviews/review-6.mp4">Смотреть видео отзыв &rarr;</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/avatar/avatar-4.png" alt="">
+                        <div>
+                            <h5>Наталья, г. Минск</h5>
+                            <div class="stars_field"></div>
+                        </div>
+                    </div>
+                    <p>
+                        Сделали балкон просто прекрасно! То, что я хотела. Довольна шкафом, отделали балкон, повесили
+                        сушилку. Работа на 10! Спасибо.
+                    </p>
+                    <a href="#" data-video="video-reviews/review-12.mp4">Смотреть видео отзыв &rarr;</a>
+                </li>
+            </ul>
+            <div class="video-container">
+                <video class="video_card_vid" poster="video-reviews/poster/poster-9.jpg">
+                    <source src="video-reviews/review-9.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_logo-adapt">
+            <img src="img/logo.png" alt="" width="150" height="40">
+        </div>
+        <div class="footer-links">
+            <div>
+
+                <ul>
+                    <li class="footer_logo">
+                        <img src="img/logo.png" alt="" width="150" height="40">
+                    </li>
+
+                    <li>
+                        г. Минск, ул. Масюковщина, 44
+                    </li>
+                    <li>
+                        Работаем ежедневно с 8.00 до 21.00
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/oknobalkon.by?igsh=MTh4bHZkNWZhYTI0Zg=="> <img
+                                src="img/icons/icon_instagram.svg" alt=""> Мы в Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/viktorminutka">
+                            <img src="img/icons/icon_telegram.svg" alt="Telegram"> Мы в Telegram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h5>УСЛУГИ</h5>
+                    </li>
+                    <li>
+                        <a href="finishing-of-balconies.html">Отделка балконов</a>
+                    </li>
+                    <li>
+                        <a href="windows-frames.html">Окна и рамы</a>
+                    </li>
+                    <li>
+                        <a href="window-repair.html">Ремонт окон</a>
+                    </li>
+                    <li>
+                        <a href="furniture-balconies.html">Мебель для балконов</a>
+                    </li>
+                    <li>
+                        <a href="roller-blinds.html">Роль шторы</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="our-works.html">НАШИ РАБОТЫ</a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li>
+                        <a href="for-company.html">О КОМПАНИИ</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">КОНТАКТЫ</a>
+                    </li>
+                    <li id="vacancy">
+                        <a>ФОРМА ВАКАНСИИ</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer_contacts">
+                    <li>
+                        <h3>
+                            <a href="tel:+375295542440">
+                                +375 (29) 554-24-40
+                            </a>
+                        </h3>
+                        <h4><a href="mailto:oknobalkon2@mail.ru">oknobalkon2@mail.ru</a></h4>
+                    </li>
+                    <li>
+                        <button class="footer_btn signUp">
+                            Заказать звонок
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_btn-adapt">
+            <button class="signUp">
+                Заказать звонок
+            </button>
+        </div>
+        <div class="copyright_field">
+
+            <div class="copyright"><img src="img/icons/icon_copyright.svg" width="24px" height="24px" alt=""><a
+                    href="#"><p>Политика конфиденциальности</p></a></div>
+            <p>2024 OKNOBALKON. Все права защищены</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

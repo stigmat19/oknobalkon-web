@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KHZQJ6LG');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Установка рольштор</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="roller-blinds-installation">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHZQJ6LG"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-img">
+
+        </div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form action="">
+                <h3>Один звонок до балкона вашей мечты </h3>
+                <p>Для получения бесплатного замера оставьте онлайн заявку и мы перезвоним вам в ближайшее время!</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="myModalGift" class="modal">
+    <div class="modal-content gift">
+        <div class="modal-img"></div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form>
+                <h3>Дарим подарки! </h3>
+                <p>Закажите отделку балкона под ключ и выбирайте один из подарков! Просто отправьте заявку и мы свяжемся
+                    с вами в ближайшее время.</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal" id="vacancyModal">
+    <div class="modal-content">
+        <div class="vacancy">
+            <span class="close">&times;</span>
+            <form action="">
+                <h3><b class="yellow_back"> Работа </b> в OKNOBALKON </h3>
+                <h5>Мы постоянно растем и расширяемся, поэтому нам нужны новые кадры </h5>
+                <p>Готовы предоставить самые лучшие условия, оказать помощь в карьерном росте и заработке. Если вы
+                    квалифицированный специалист по установке окон ПВХ, алюминиевых рам, или вы мастер по отделке
+                    балконов — мы всегда рассмотрим вашу вакансию.</p>
+                <p>А может вы просто умеете держать перфоратор в руках и желаете стать мастером — можем предложить вам
+                    обучение.</p>
+                <h5>Отправьте заявку и мы свяжемся с вами в ближайшее время!</h5>
+                <div class="input-fields-vacancy">
+
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+                    <input type="hidden" name="type" value="Вакансии">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                </div>
+                <div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a class="border" href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="modalThanks" class="modal-thanks">
+    <div class="modal-content">
+        <h3>Ваша заявка отправлена!</h3>
+        <p class="p-big">Наш менеджер свяжется с вами в ближайшее время</p>
+    </div>
+</div>
+
+
+<div class="header container">
+    <a href="index.html"><span class="logo"><img src="img/logo.png" alt=""></span></a>
+    <ul>
+        <li class="dropdown">
+            <button id="dropdownBtn" class="dropbtn">Услуги <img id="arrowIcon" src="img/icons/arrow-down.svg" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="finishing-of-balconies.html">Отделка балконов</a>
+                <a href="windows-frames.html">Окна и рамы</a>
+                <a href="window-repair.html">Ремонт окон</a>
+                <a href="furniture-balconies.html">Мебель для балконов</a>
+                <a href="roller-blinds.html">Роль шторы</a>
+            </div>
+        </li>
+        <li><a href="our-works.html">Наши работы</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="for-company.html">О компании</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <div class="header-controls">
+        <div class="header_phone-btn-adapt">
+            <a href="tel:+375295542440"></a>
+        </div>
+        <div class="header_phone-btn">
+            <a href="tel:+375295542440">
+                +375 (29) 554-24-40
+            </a>
+        </div>
+        <span class="burger">
+            <div id="burgerIcon"></div>
+            <div id="icon_close"></div>
+            <!-- <img id="burgerIcon" src="img/icons/burger.svg" alt="" width="40"> -->
+            <!-- <img id="icon_close" src="img/icons/icon_close.svg" alt="" width="40"> -->
+        </span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="crumbs">
+        <p><a href="#">Главная</a>   &gt;   <a href="#">Установка рольштор </a> &gt; <a href="#">Стандарт</a></p>
+    </div>
+</div>
+
+<div class="new-question manufacturing container">
+    <div class="manufacturing-text">
+        <h3>
+            Изготовление и монтаж рольштор
+        </h3>
+        <h5>Одним из лучших решений для оформления окон являются роль-шторы. Они не только защищают от яркого солнечного
+            света, но и придают вашему интерьеру стильный и современный вид.</h5>
+        <div class="black-btn-2">
+            <button>
+                Записаться на бесплатный замер
+            </button>
+        </div>
+    </div>
+    <div class="manufacturing-img"><img src="img/roller-blinds/roller-1.png"/></div>
+</div>
+
+
+<div class="container our-advantages">
+    <div class="our-advantages-img">
+        <!--        <img src="img/roller-blinds/roller-blind-our.png" height="600" width="550"/>-->
+    </div>
+    <div class="our-advantages-text">
+        <h3>
+            Наши <span class="yellow_text">преимущества</span>
+        </h3>
+        <ul>
+            <li>
+                <img src="img/icons/Vector.png" height="30" width="30"/>
+                <p>Опыт и надежность. Более чем 15-летний опыт в сфере ремонта балконов и лоджий, что позволяет нам
+                    предлагать только лучшие решения.</p>
+            </li>
+
+            <li>
+                <img src="img/icons/Vector.png" height="30" width="30"/>
+                <p>Индивидуальный подход. Мы учитываем ваши пожелания и помогаем выбрать идеальный вариант.</p></li>
+            <li>
+                <img src="img/icons/Vector.png" height="30" width="30"/>
+                <p>Инновационные технологии. Мы применяем современные технологиии и материалы, которые обеспечивают
+                    долговечность и надежность наших изделий.</p>
+            </li>
+            <li>
+                <img src="img/icons/Vector.png" height="30" width="30"/>
+                <p>Гарантия качества. Мы уверены в качестве нашей работы и предоставляем гарантии на все выполненные
+                    услуги
+                    и материалы.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="models">
+    <div class="container">
+        <div class="models-title">
+            <h3>Разнообразие моделей и материалов </h3>
+            <p>Мы предлагаем широкий ассортимент роль-штор, которые подойдут для любого стиля и дизайна</p>
+        </div>
+        <div class="models-list">
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li><h5>Роль-Шторы Стандарт</h5></li>
+                    <li><p>Наиболее популярный выбор благодаря своей доступной цене, простоте установки и широкому
+                        ассортименту цветов и текстур материалов. Их надежная конструкция и легкость в использовании
+                        обеспечивают долгий срок службы без проблем.</p></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>2</li>
+                    <li><h5>Роль-шторы День-Ночь</h5></li>
+                    <li><p>Идеальный выбор для тех, кто хочет регулировать уровень освещения. Эти шторы состоят из
+                        чередующихся полос прозрачной и непрозрачной ткани, что позволяет легко менять атмосферу в
+                        помещении.</p></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>3</li>
+                    <li><h5>Роль-шторы Blackout</h5></li>
+                    <li><p>Обеспечивают полную защиту от света, что делает их отличным вариантом для спален или домашних
+                        кинотеатров.</p></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>4</li>
+                    <li><h5>Роль-шторы с принтами</h5></li>
+                    <li><p>Мебель для отдыха или работы, которая легко вписывается в любой интерьер.</p></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>5</li>
+                    <li><h5>Эко-шторы </h5></li>
+                    <li><p>Изготовленные из натуральных материалов, они не только красивы, но и безопасны для
+                        здоровья.</p></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="with-us container">
+    <div class="with-us-text">
+        <p class="p-big">
+            С <a href="#"> <span class="yellow_text">OKNOBALCON.BY</span></a> вы получаете не только качественные
+            роль-шторы, но и полный комплекс услуг по их изготовлению и монтажу.
+        </p>
+        <p class="p-big">
+            Ваша лоджия или балкон — это не просто дополнительное пространство, а место, где можно создать уют и
+            комфорт.
+        </p>
+
+        <div>
+            <span>
+                <h2>15+</h2>
+                <h5>Лет<br> на рынке</h5>
+            </span>
+            <span>
+                <h2>1500+</h2>
+                <h5>Выполненных<br> проектов</h5>
+            </span>
+        </div>
+    </div>
+    <div class="with-us-image">
+
+    </div>
+</div>
+
+
+<div class="new-question container">
+    <form action="">
+        <h3>Не упустите возможность преобразить ваше пространство с помощью стильных и функциональных роль-штор</h3>
+        <h5>Наши специалисты помогут вам выбрать идеальные шторы и быстро осуществят их монтаж. Сделайте шаг к уюту и
+            комфорту уже сегодня!</h5>
+        <div class="input-fields-finishing">
+            <input type="text" id="name" name="name" required="" placeholder="Введите имя">
+            <input type="tel" id="phone" name="phone" required="" placeholder="Введите номер телефона">
+            <button type="submit">Отправить заявку</button>
+        </div>
+        <p>Нажимая на кнопку, я соглашаюсь с условиями <a class="policy" href="#">политики конфиденциальности</a></p>
+    </form>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_logo-adapt">
+            <img src="img/logo.png" alt="" width="150" height="40">
+        </div>
+        <div class="footer-links">
+            <div>
+                <ul>
+                    <li class="footer_logo">
+                        <img src="img/logo.png" alt="" width="150" height="40">
+                    </li>
+
+                    <li>
+                        г. Минск, ул. Масюковщина, 44
+                    </li>
+                    <li>
+                        Работаем ежедневно с 8.00 до 21.00
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/oknobalkon.by?igsh=MTh4bHZkNWZhYTI0Zg=="> <img
+                                src="img/icons/icon_instagram.svg" alt=""> Мы в Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/viktorminutka">
+                            <img src="img/icons/icon_telegram.svg" alt="Telegram"> Мы в Telegram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h5>УСЛУГИ</h5>
+                    </li>
+                    <li>
+                        <a href="finishing-of-balconies.html">Отделка балконов</a>
+                    </li>
+                    <li>
+                        <a href="windows-frames.html">Окна и рамы</a>
+                    </li>
+                    <li>
+                        <a href="window-repair.html">Ремонт окон</a>
+                    </li>
+                    <li>
+                        <a href="furniture-balconies.html">Мебель для балконов</a>
+                    </li>
+                    <li>
+                        <a href="roller-blinds.html">Роль шторы</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="our-works.html">НАШИ РАБОТЫ</a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li>
+                        <a href="for-company.html">О КОМПАНИИ</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">КОНТАКТЫ</a>
+                    </li>
+                    <li id="vacancy">
+                        <a>ФОРМА ВАКАНСИИ</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer_contacts">
+                    <li>
+                        <h3>
+                            <a href="tel:+375295542440">
+                                +375 (29) 554-24-40
+                            </a>
+                        </h3>
+                        <h4><a href="mailto:oknobalkon2@mail.ru">oknobalkon2@mail.ru</a></h4>
+                    </li>
+                    <li>
+                        <button class="footer_btn signUp">
+                            Заказать звонок
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_btn-adapt">
+            <button class="signUp">
+                Заказать звонок
+            </button>
+        </div>
+        <div class="copyright_field">
+
+            <div class="copyright"><img src="img/icons/icon_copyright.svg" width="24px" height="24px" alt=""><a
+                    href="#"><p>Политика конфиденциальности</p></a></div>
+            <p>2024 OKNOBALKON. Все права защищены</p>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
