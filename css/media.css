@@ -96,7 +96,7 @@
     }
 
     .main_block {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.JPG) 0px -80px / cover;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.jpg) 0px -80px / cover;
     }
 
     .service_block .container {
@@ -596,7 +596,7 @@
     }
 
     .main_block {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.JPG) 0px 0px / cover;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.jpg) 0px 0px / cover;
     }
 
     .service_block ul {
@@ -1090,7 +1090,7 @@
     .main_block {
         padding: 20px;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%),
-        url("../img/home-1.JPG") -180px 0 / cover;
+        url("../img/home-1.jpg") -180px 0 / cover;
     }
 
     .transfer {
@@ -1586,7 +1586,7 @@
     .main_block {
         padding-bottom: 30px;
         margin-top: 130px;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 1.2) 0%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.JPG) -240px 0 / cover;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1.2) 0%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.jpg) -240px 0 / cover;
     }
 
     .yellow-btn {

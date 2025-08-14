@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KHZQJ6LG');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Отделка ламинатом</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="../../css/reset.css">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/media.css">
+
+</head>
+<body class="window-adjustment">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHZQJ6LG"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-img">
+
+        </div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form action="">
+                <h3>Один звонок до балкона вашей мечты </h3>
+                <p>Для получения бесплатного замера оставьте онлайн заявку и мы перезвоним вам в ближайшее время!</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="myModalGift" class="modal">
+    <div class="modal-content gift">
+        <div class="modal-img"></div>
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <form>
+                <h3>Дарим подарки! </h3>
+                <p>Закажите отделку балкона под ключ и выбирайте один из подарков! Просто отправьте заявку и мы свяжемся
+                    с вами в ближайшее время.</p>
+                <div class="input-fields">
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal" id="vacancyModal">
+    <div class="modal-content">
+        <div class="vacancy">
+            <span class="close">&times;</span>
+            <form action="">
+                <h3><b class="yellow_back"> Работа </b> в OKNOBALKON </h3>
+                <h5>Мы постоянно растем и расширяемся, поэтому нам нужны новые кадры </h5>
+                <p>Готовы предоставить самые лучшие условия, оказать помощь в карьерном росте и заработке. Если вы
+                    квалифицированный специалист по установке окон ПВХ, алюминиевых рам, или вы мастер по отделке
+                    балконов — мы всегда рассмотрим вашу вакансию.</p>
+                <p>А может вы просто умеете держать перфоратор в руках и желаете стать мастером — можем предложить вам
+                    обучение.</p>
+                <h5>Отправьте заявку и мы свяжемся с вами в ближайшее время!</h5>
+                <div class="input-fields-vacancy">
+
+                    <input type="text" name="name" required="" placeholder="Введите имя">
+                    <input type="tel" name="phone" required="" placeholder="Введите номер телефона">
+                    <input type="hidden" name="type" value="Вакансии">
+
+                    <div class="black-btn">
+                        <button type="submit">Отправить заявку</button>
+                    </div>
+                </div>
+                <div>
+                    <span>Нажимая на кнопку, я соглашаюсь с условиями <a class="border" href="#">политики конфиденциальности</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="modalThanks" class="modal-thanks">
+    <div class="modal-content">
+        <h3>Ваша заявка отправлена!</h3>
+        <p class="p-big">Наш менеджер свяжется с вами в ближайшее время</p>
+    </div>
+</div>
+
+
+<div class="header container">
+    <a href="index.html"><span class="logo"><img src="../../img/logo.png" alt=""></span></a>
+    <ul>
+        <li class="dropdown">
+            <button id="dropdownBtn" class="dropbtn">Услуги <img id="arrowIcon" src="../../img/icons/arrow-down.svg" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../../finishing-of-balconies.html">Отделка балконов</a>
+                <a href="../../windows-frames.html">Окна и рамы</a>
+                <a href="../../window-repair.html">Ремонт окон</a>
+                <a href="../../furniture-balconies.html">Мебель для балконов</a>
+                <a href="../../roller-blinds.html">Роль шторы</a>
+            </div>
+        </li>
+        <li><a href="../../our-works.html">Наши работы</a></li>
+        <li><a href="../../reviews.html">Отзывы</a></li>
+        <li><a href="../../for-company.html">О компании</a></li>
+        <li><a href="../../contacts.html">Контакты</a></li>
+    </ul>
+
+    <div class="header-controls">
+        <div class="header_phone-btn-adapt">
+            <a href="tel:+375295542440"></a>
+        </div>
+        <div class="header_phone-btn">
+            <a href="tel:+375295542440">
+                +375 (29) 554-24-40
+            </a>
+        </div>
+        <span class="burger">
+            <div id="burgerIcon"></div>
+            <div id="icon_close"></div>
+        </span>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+    <div class="container">
+        <div class="crumbs">
+            <p>
+                <a href="#" class="editableText">Главная</a> &gt;
+                <a href="#" class="editableText">Отделка балконов</a> &gt;
+                <a href="#" class="editableText">Отделка ламинатом</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="new-question manufacturing container">
+        <div class="manufacturing-text">
+            <h3 id="title1" class="editableText">Отделка ламинатом</h3>
+            <h5 id="title2" class="editableText">Популярный отделочный материал, который широко используется в интерьере благодаря своей эстетике и практичности</h5>
+            <div class="black-btn-2">
+                <button>Записаться на бесплатный замер</button>
+            </div>
+        </div>
+        <div class="manufacturing-img">
+            <img class="uploadImage" src="image1.png" style="cursor:pointer;" alt="!!!! Загружать картинки только в png !!!!">
+            <input class="fileInput" type="file" name="image1" accept="image/*" style="display:none;">
+        </div>
+    </div>
+
+    <div class="container our-advantages">
+        <div class="our-advantages-img">
+            <div class="manufacturing-img">
+                <img class="uploadImage" src="image2.jpg" style="cursor:pointer;" alt="!!!! Загружать картинки только в jpg !!!!">
+                <input class="fileInput" type="file" name="image2" accept="image/*" style="display:none;">
+            </div>
+        </div>
+        <div class="our-advantages-text">
+            <h3 class="editableText">Преимущества отделки балкона ламинатом</h3>
+
+            <ul>
+                
+            <li class="editableText"><img src="../../img/icons/Vector.png" height="30" width="30"><p>Использование ламината на балконе позволяет легко поддерживать чистоту: его поверхность легко моется. По мнению экспертов, такой выбор не только улучшает внешний вид пространства, но и делает его более комфортным для отдыха.</p></li><li class="editableText"><img src="../../img/icons/Vector.png" height="30" width="30"><p>Креативный подход к отделке с использованием ламината открывает безграничные возможности для дизайна. Вы можете выбрать различные текстуры и цвета, чтобы создать уникальную атмосферу на вашем балконе или лоджии. Например, имитация дерева добавит тепла и уюта, а светлые оттенки визуально расширят пространство.</p></li><li class="editableText"><img src="../../img/icons/Vector.png" height="30" width="30"><p>Мы рекомендуем комбинировать ламинат с другими материалами, такими как дерево и камень, чтобы создать стильный и современный интерьер.</p></li></ul>
+
+            
+            
+        </div>
+    </div>
+
+    <div class="new-back">
+        <div class="container">
+            <div class="models-title">
+                <h3 class="editableText">Выбор ламината</h3>
+                <p class="editableText">Мы всегда следим за новыми тенденциями и готовы предложить нашим клиентам самые современные решения.</p>
+            </div>
+            <div class="models-list">
+                
+                
+                
+                
+            
+                
+        
+                
+        
+                
+        
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li><h5>Классы ламината</h5></li>
+                    <li><p>Ламинат имеет различные классы от 21 до 34, что определяет его прочность и устойчивость к износу. Для жилых помещений обычно выбирают ламинат класса 31-33, а для коммерческих — 32-34.
+Важно учитывать также толщину панели: чем она больше, тем лучше ламинат справляется с нагрузками.</p></li>
+                </ul>
+            </div>    
+        
+                
+        
+            <div>
+                <ul>
+                    <li>2</li>
+                    <li><h5>Влагостойкость</h5></li>
+                    <li><p>Эксперты рекомендуют использовать влагостойкий ламинат для обшивки балконов и лоджий, так как эти пространства подвержены изменениям температуры и влажности. Влагостойкие модели имеют специальное покрытие, защищающее от влаги и механических повреждений.</p></li>
+                </ul>
+            </div>    
+        
+            <div>
+                <ul>
+                    <li>3</li>
+                    <li><h5>Новые технологии</h5></li>
+                    <li><p>Инновации в области отделки также не стоят на месте. На рынке появились ламинаты с дополнительными защитными слоями, которые делают их еще более устойчивыми к механическим повреждениям и влаге. Это особенно важно для балконов, где мебель и другие предметы могут оставлять царапины и следы.</p></li>
+                </ul>
+            </div>    
+        </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="container our-advantages reflect">
+        
+        <div class="our-advantages-img">
+            <div class="manufacturing-img">
+                <img class="uploadImage" src="image3.jpg" style="cursor:pointer;" alt="!!!! Загружать картинки только в jpg !!!!">
+                <input class="fileInput" type="file" name="image3" accept="image/*" style="display:none;">
+            </div>
+        </div>
+        <div class="our-advantages-text">
+            <h3 class="editableText">Особенности монтажа</h3>
+            
+            
+
+            <ul>
+                
+
+                
+                
+                
+            <li class="editableText"><img src="../../img/icons/Vector.png" height="30" width="30"><p>При обшивке балкона ламинатом важно правильно подготовить основание: оно должно быть ровным и чистым.</p></li><li class="editableText"><img src="../../img/icons/Vector.png" height="30" width="30"><p>Установка производится на специальный подложку, которая поможет снизить шум и улучшить теплоизоляцию.</p></li><li class="editableText"><img src="../../img/icons/Vector.png" height="30" width="30"><p>Ламинат можно укладывать как в классическом порядке, так и по диагонали для создания интересного визуального эффекта.</p></li></ul>
+
+            
+            
+        </div>
+    </div>
+
+    <div class="new-back">
+        
+        <div class="with-us container">
+            <div class="with-us-text">
+                <h3>Почему вам стоит выбрать
+                    <a href="#">
+                        <span class="yellow_text">OKNOBALCON.BY</span>
+                    </a>
+                </h3>
+            </div>
+            <div class="with-us-text-2">
+                <p class="p-big editableText">
+                    Мы знаем, как преобразить ваш балкон или лоджию в стильное и функциональное место, где будет приятно проводить время
+                </p>
+                <div>
+                <span>
+                    <h2>15+</h2>
+                    <h5>Лет<br> на рынке</h5>
+                </span>
+                    <span>
+                    <h2>1500+</h2>
+                    <h5>Выполненных<br> проектов</h5>
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+
+    <div class="new-question container">
+        <form action="">
+            <h3 class="editableText">Отделка балконов и лоджий ламинатом — это не только практично, но и стильно</h3>
+            <h5 class="editableText">С нашим опытом и профессионализмом мы поможем вам создать пространство, которое будет радовать вас и ваших близких долгие годы. Обратитесь к нам, и мы реализуем ваши самые смелые идеи!</h5>
+            <div class="input-fields-finishing">
+                <input type="text" id="name" name="name" required="" placeholder="Введите имя">
+                <input type="tel" id="phone" name="phone" required="" placeholder="Введите номер телефона">
+                <button type="submit">Отправить заявку</button>
+            </div>
+            <p>Нажимая на кнопку, я соглашаюсь с условиями <a class="policy" href="#">политики конфиденциальности</a></p>
+
+        </form>
+    </div>
+
+    
+    <br>
+    <br>
+
+    
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="footer_logo-adapt">
+            <img src="../../img/logo.png" alt="" width="150" height="40">
+        </div>
+        <div class="footer-links">
+            <div>
+
+                <ul>
+                    <li class="footer_logo">
+                        <img src="../../img/logo.png" alt="" width="150" height="40">
+                    </li>
+
+                    <li>
+                        г. Минск, ул. Масюковщина, 44
+                    </li>
+                    <li>
+                        Работаем ежедневно с 8.00 до 21.00
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/oknobalkon.by?igsh=MTh4bHZkNWZhYTI0Zg=="> <img
+                                    src="../../img/icons/icon_instagram.svg" alt=""> Мы в Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/viktorminutka">
+                            <img src="../../img/icons/icon_telegram.svg" alt="Telegram"> Мы в Telegram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h5>УСЛУГИ</h5>
+                    </li>
+                    <li>
+                        <a href="../../finishing-of-balconies.html">Отделка балконов</a>
+                    </li>
+                    <li>
+                        <a href="../../windows-frames.html">Окна и рамы</a>
+                    </li>
+                    <li>
+                        <a href="../../window-repair.html">Ремонт окон</a>
+                    </li>
+                    <li>
+                        <a href="../../furniture-balconies.html">Мебель для балконов</a>
+                    </li>
+                    <li>
+                        <a href="../../roller-blinds.html">Роль шторы</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../our-works.html">НАШИ РАБОТЫ</a>
+                    </li>
+                    <li>
+                        <a href="../../reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li>
+                        <a href="../../for-company.html">О КОМПАНИИ</a>
+                    </li>
+                    <li>
+                        <a href="../../contacts.html">КОНТАКТЫ</a>
+                    </li>
+                    <li id="vacancy">
+                        <a>ФОРМА ВАКАНСИИ</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer_contacts">
+                    <li>
+                        <h3>
+                            <a href="tel:+375295542440">
+                                +375 (29) 554-24-40
+                            </a>
+                        </h3>
+                        <h4><a href="mailto:oknobalkon2@mail.ru">oknobalkon2@mail.ru</a></h4>
+                    </li>
+                    <li>
+                        <button class="footer_btn signUp">
+                            Заказать звонок
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_btn-adapt">
+            <button class="signUp">
+                Заказать звонок
+            </button>
+        </div>
+        <div class="copyright_field">
+
+            <div class="copyright"><img src="../../img/icons/icon_copyright.svg" width="24px" height="24px" alt=""><a
+                        href="#"><p>Политика конфиденциальности</p></a></div>
+            <p>2024 OKNOBALKON. Все права защищены</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="../../js/form.js"></script>
+<script src="../../js/script.js"></script>
+
+</body>
+</html>
