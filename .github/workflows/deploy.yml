@@ -18,7 +18,7 @@ jobs:
         with:
           host: vh96.hoster.by
           username: oknobalkon
-          password: _1}aP8qW1)nDffWM
+          password: '_1}aP8qW1)nDffWM'
           port: 22
           localDir: "."                     # корень репозитория
           remoteDir: "/home/oknobalkon/public_html/"
