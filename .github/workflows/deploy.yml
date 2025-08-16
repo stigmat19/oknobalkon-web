@@ -1,30 +1,29 @@
-name: Deploy to SFTP with Password
+name: Deploy to SFTP
 
 on:
   push:
     branches:
-      - main
+      - main  # при пуше в main будет запуск деплоя
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Deploy via SFTP with password
+      - name: Deploy files via SFTP with password
         uses: sand4rt/ftp-deployer@v1.4
         with:
-          sftp: true                         # используем SFTP
-          host: ${{ secrets.SFTP_HOST }}    # адрес сервера
-          port: 22                          # порт SFTP
-          username: ${{ secrets.SFTP_USERNAME }}  # логин
-          password: ${{ secrets.SFTP_PASSWORD }}  # пароль
-          remote_folder: /home/oknobalkon/public_html/  # целевая папка, обязательно с '/'
-          local_folder: '.'                  # локальная папка - корень репозитория
-          cleanup: false                    # не удалять файлы на сервере
-          include: '["*"]'
-          exclude: '["video-result/**","video-reviews/**"]'
-          passive: true                    # пассивный режим (зависит от сервера)
-          retries: 3   # количество повторов при неудаче
-          retry-delay: 30  # время паузы между попытками, сек
+          sftp: true
+          host: vh96.hoster.by
+          port: 22
+          username: oknobalkon
+          password: _1}aP8qW1)nDffWM
+          remote_folder: /home/oknobalkon/public_html/
+          local_folder: .                           # отправляем корень репозитория
+          cleanup: false                            # не удаляем файлы на сервере, которых нет локально
+          include: '["*"]'                         # включаем все файлы и папки
+          exclude: '["video-result/**","video-reviews/**"]'  # исключаем большие папки с видео
+          pasive: true                             # пассивный режим FTP
