@@ -1,4 +1,4 @@
-name: Deploy to Server via SFTP
+name: Deploy to SFTP with Password
 
 on:
   push:
@@ -12,12 +12,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Copy files via SFTP
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy via SFTP with password
+        uses: sand4rt/ftp-deployer@v1.4
         with:
-          host: ${{ secrets.SFTP_HOST }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          port: 22
-          source: "./"                             # локальная папка с файлами
-          target: "/home/oknobalkon/public_html/" # путь на сервере, заканчивается слэшем
+          sftp: true                         # используем SFTP
+          host: ${{ secrets.SFTP_HOST }}    # адрес сервера
+          port: 22                          # порт SFTP
+          username: ${{ secrets.SFTP_USERNAME }}  # логин
+          password: ${{ secrets.SFTP_PASSWORD }}  # пароль
+          remote_folder: /home/oknobalkon/public_html/  # целевая папка, обязательно с '/'
+          local_folder: '.'                  # локальная папка - корень репозитория
+          cleanup: false                    # не удалять файлы на сервере
+          include: '[ "*", "**/*" ]'        # включать все файлы
+          exclude: '[ "node_modules/**", ".git/**", "*.env"]'  # исключения (можно настроить)
+          passive: true                    # пассивный режим (зависит от сервера)
