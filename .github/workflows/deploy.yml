@@ -3,27 +3,26 @@ name: Deploy to SFTP
 on:
   push:
     branches:
-      - main  # при пуше в main будет запуск деплоя
+      - main  # запуск при пуше в main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy files via SFTP with password
-        uses: sand4rt/ftp-deployer@v1.4
+      - name: Upload files via SFTP
+        uses: wangyucode/sftp-upload-action@v2.0.4
         with:
-          sftp: true
           host: vh96.hoster.by
-          port: 22
           username: oknobalkon
           password: _1}aP8qW1)nDffWM
-          remote_folder: /home/oknobalkon/public_html/
-          local_folder: .                           # отправляем корень репозитория
-          cleanup: false                            # не удаляем файлы на сервере, которых нет локально
-          include: '["*"]'                         # включаем все файлы и папки
-          exclude: '["video-result/**","video-reviews/**"]'  # исключаем большие папки с видео
-          pasive: true                             # пассивный режим FTP
+          port: 22
+          localDir: "."                     # корень репозитория
+          remoteDir: "/home/oknobalkon/public_html/"
+          exclude: "video-result/,video-reviews/"  # папки, которые не грузить
+          compress: true                   # сжимать перед передачей (ускорит)
+          forceUpload: false               # грузить только изменённые файлы
+          removeExtraFilesOnServer: false # не удалять лишние файлы на сервере
