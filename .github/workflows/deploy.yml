@@ -17,7 +17,7 @@ jobs:
         with:
           host: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USERNAME }}
-          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
           source: "./"                             # локальная папка с файлами
           target: "/home/oknobalkon/public_html/" # путь на сервере, заканчивается слэшем
