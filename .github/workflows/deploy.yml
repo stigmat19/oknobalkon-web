@@ -22,7 +22,7 @@ jobs:
           port: 22
           localDir: "."                     # корень репозитория
           remoteDir: "/home/oknobalkon/public_html/"
-          exclude: "video-result/,video-reviews/, .github/"  # папки, которые не грузить
+          exclude: "video-result/,video-reviews/, .github/, .git/"  # папки, которые не грузить
           compress: true                   # сжимать перед передачей (ускорит)
-          forceUpload: false               # грузить только изменённые файлы
+          forceUpload: true               # грузить только изменённые файлы
           removeExtraFilesOnServer: false # не удалять лишние файлы на сервере
