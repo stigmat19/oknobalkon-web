@@ -13,12 +13,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Check server folder via SSH
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: vh96.hoster.by
+          username: oknobalkon
+          password: '_1}aP8qW1)nDffWM'  # лучше хранить пароль в секретах!
+          script: |
+            echo "Проверяем папку /home/oknobalkon/public_html/js/service на сервере:"
+            ls -la /home/oknobalkon/public_html/js/service || echo "Папка не найдена"
+
       - name: Upload files via SFTP
         uses: wangyucode/sftp-upload-action@v2.0.4
         with:
           host: vh96.hoster.by
           username: oknobalkon
-          password: '_1}aP8qW1)nDffWM'
+          password: '_1}aP8qW1)nDffWM'  # как и выше, лучше из секретов
           port: 22
           localDir: "."                     # корень репозитория
           remoteDir: "/home/oknobalkon/public_html/"
