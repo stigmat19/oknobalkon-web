@@ -1,4 +1,4 @@
-name: Deploy to SFTP
+name: Deploy to Server via SFTP
 
 on:
   push:
@@ -9,16 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy via SFTP
-        uses: atim/sftp-deploy@v1.1.0
+      - name: Copy files via SFTP
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USERNAME }}
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           port: 22
-          source: "./"
-          target: "/home/oknobalkon/public_html/"
-          rm: true
+          source: "./"                             # локальная папка с файлами
+          target: "/home/oknobalkon/public_html/" # путь на сервере, заканчивается слэшем
