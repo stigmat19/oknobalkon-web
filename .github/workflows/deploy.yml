@@ -1,4 +1,4 @@
-name: Deploy to SFTP Server
+name: Deploy to SFTP
 
 on:
   push:
@@ -6,18 +6,19 @@ on:
       - main
 
 jobs:
-  sftp-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: FTP Deploy via SFTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via SFTP
+        uses: atim/sftp-deploy@v1.1.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/oknobalkon/public_html/
-          local-dir: ./
-          protocol: sftp
+          host: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          port: 22
+          source: "./"
+          target: "/home/oknobalkon/public_html/"
+          rm: true
