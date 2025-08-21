@@ -1217,6 +1217,10 @@ h5 {
     padding: 10px;
     margin: 5px;
 }
+.distance_img{
+    justify-content: center;
+    column-gap: 20px;
+}
 
 .our-advantages.reflect{
     flex-direction: row-reverse;
@@ -1331,6 +1335,7 @@ h5 {
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: 50px;
+    align-items: center;
 }
 
 .with-us-text{

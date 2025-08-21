@@ -67,6 +67,9 @@
         padding-bottom: 70px;
     }
 
+    .distance_img .our-advantages-img{
+        height: 340px;
+    }
 
 
 
@@ -1846,7 +1849,7 @@
 
     .manufacturing-img img {
         width: auto;
-        height: 200px;
+        height: auto;
     }
 
     .manufacturing-text {
