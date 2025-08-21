@@ -1589,7 +1589,7 @@
     .main_block {
         padding-bottom: 30px;
         margin-top: 130px;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 1.2) 0%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.jpg) -240px 0 / cover;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1.2) 0%, rgba(0, 0, 0, 0) 70%), url(../img/home-1.jpg) -300px 0 / cover;
     }
 
     .yellow-btn {
