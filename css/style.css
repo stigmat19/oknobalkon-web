@@ -90,13 +90,16 @@ h5 {
 .yellow_back {
     white-space: nowrap;
     background: #FCCF3C;
-    padding: 0 3px;
-    border-radius: 8px;
+    padding: 3px;
+    border-radius: 6px;
     font-weight: 600;
 }
 
 .yellow-background {
     background: #FFFAEA;
+}
+.marg{
+    margin-left: -4px;
 }
 
 .header.container {
@@ -392,35 +395,36 @@ h5 {
 
 .our_services a:nth-child(1) {
     grid-row: span 2;
-    background: url("../img/services/service_card_big.jpg") no-repeat 0 -100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url("../img/services/service_card_big.jpg") no-repeat 0 -100px;
     background-size: cover;
     width: 100%;
     height: 450px;
 }
 
 .our_services a:nth-child(2) {
-    background: url("../img/services/service_card.jpg") no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url("../img/services/service_card.jpg") no-repeat;
     background-size: cover;
     width: 100%;
 }
 
 .our_services a:nth-child(3) {
-    background: url("../img/services/service_card (1).jpg") no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url("../img/services/service_card (1).jpg") no-repeat;
     background-size: cover;
     width: 100%;
 }
 
 .our_services a:nth-child(4) {
-    background: url("../img/services/service_card (2).jpg") no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%),  url("../img/services/service_card (2).jpg") no-repeat;
     background-size: cover;
     width: 100%;
 }
 
 .our_services a:nth-child(5) {
-    background: url("../img/services/service_card (3).jpg") no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url("../img/services/service_card (3).jpg") no-repeat;
     background-size: cover;
     width: 100%;
 }
+
 
 .promotion {
     margin-top: 100px;
@@ -1109,6 +1113,7 @@ h5 {
 
 
 
+
 .question {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -1153,6 +1158,7 @@ h5 {
 .manufacturing-img img{
     width: auto;
     height: 420px;
+    border-radius: 0 10px 0 0;
 }
 
 
@@ -1248,7 +1254,7 @@ h5 {
 .our-advantages-text ul li{
     display: flex;
     padding-bottom: 30px;
-    align-items: start;
+    align-items: center;
     column-gap: 15px;
 }
 .our-advantages-text p{
@@ -1354,6 +1360,7 @@ h5 {
 .with-us-text-2 div{
     display: flex;
     column-gap: 100px;
+    margin-bottom: 30px;
 }
 .with-us .p-big{
     padding-bottom: 20px;
