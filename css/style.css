@@ -395,7 +395,7 @@ h5 {
 
 .our_services a:nth-child(1) {
     grid-row: span 2;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url("../img/services/service_card_big.jpg") no-repeat 0 -100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url("../img/services/service_card_big.jpg") no-repeat;
     background-size: cover;
     width: 100%;
     height: 450px;
@@ -1268,7 +1268,7 @@ h5 {
 .our-advantages-img{
     border-radius: 8px;
     width: 550px;
-    height: 600px;
+    height: 550px;
     overflow: hidden;
     /*background: url("../img/roller-blinds/roller-blind-our.png") no-repeat 0 -20px;*/
     /*background-size: cover;*/
