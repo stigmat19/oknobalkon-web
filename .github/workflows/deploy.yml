@@ -1,28 +1,60 @@
+#name: Deploy to SFTP
+#
+#on:
+#  push:
+#    branches:
+#      - main  # запуск при пуше в main
+#
+#jobs:
+#  deploy:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v3
+#
+#      - name: Upload files via SFTP
+#        uses: wangyucode/sftp-upload-action@v2.0.4
+#        with:
+#          host: vh96.hoster.by
+#          username: oknobalkon
+#          password: _1}aP8qW1)nDffWM
+#          port: 22
+#          localDir: "."                     # корень репозитория
+#          remoteDir: "/home/oknobalkon/public_html/"
+#          exclude: "video-result/,video-reviews/"  # папки, которые не грузить
+#          compress: true                   # сжимать перед передачей (ускорит)
+#          forceUpload: true               # грузить только изменённые файлы
+#          removeExtraFilesOnServer: true # не удалять лишние файлы на сервере
+
+
 name: Deploy to SFTP
 
 on:
   push:
     branches:
-      - main  # запуск при пуше в main
+      - main  # деплой будет автоматически запускаться только после пуша в ветку main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Проверить/скачать последний код из репозитория
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # 2. Загрузить файлы на сервер по SFTP, исключив папку test
       - name: Upload files via SFTP
         uses: wangyucode/sftp-upload-action@v2.0.4
         with:
-          host: vh96.hoster.by
-          username: oknobalkon
-          password: _1}aP8qW1)nDffWM
-          port: 22
-          localDir: "."                     # корень репозитория
-          remoteDir: "/home/oknobalkon/public_html/"
-          exclude: "video-result/,video-reviews/"  # папки, которые не грузить
-          compress: true                   # сжимать перед передачей (ускорит)
-          forceUpload: true               # грузить только изменённые файлы
-          removeExtraFilesOnServer: true # не удалять лишние файлы на сервере
+          host: vh96.hoster.by              # адрес вашего SFTP сервера
+          username: oknobalkon                    # логин пользователя
+          password: _1}aP8qW1)nDffWM                # пароль (рекомендуется через секреты GitHub)
+          port: 22                         # порт, обычно 22
+          localDir: "."                    # директория в вашем проекте откуда брать файлы (корень репозитория)
+          remoteDir: "/home/oknobalkon/public_html/"  # путь на сервере для загрузки
+          exclude: "video-result/,video-reviews/"                 # папка test и ее содержимое не будет загружаться
+          compress: true                   # сжать файлы перед загрузкой (ускоряет)
+          forceUpload: false               # загружать только изменённые файлы
+          removeExtraFilesOnServer: false # не удалять файлы, отсутствующие в репозитории (чтобы ничего не стереть)
