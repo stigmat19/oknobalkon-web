@@ -18,10 +18,9 @@ for (let i = 0; i < forms.length; i++) {
                 body: JSON.stringify({name: name, phone: phone, type: type})
             });
 
-
             setTimeout(() => {
-                window.location.href = `../thanks.html`;
-            }, 5000);
+                window.location.href = `https://oknobalkon.by/thanks.html`;
+            }, 3000);
 
         } catch (err){
             alert('Произошла ошибка, попробуйте позже');
