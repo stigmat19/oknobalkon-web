@@ -20,7 +20,7 @@ for (let i = 0; i < forms.length; i++) {
 
 
             setTimeout(() => {
-                window.location.href = `${SERVER_URL}/thanks.html`;
+                window.location.href = `../thanks.html`;
             }, 5000);
 
         } catch (err){
