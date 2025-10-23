@@ -2016,3 +2016,79 @@
 
 
 }
+
+
+/*изменения 16.10*/
+@media (max-width: 1240px){
+
+}
+@media (max-width: 960px){
+    .confidential .container{
+        width: 920px;
+    }
+    .confidential ul {
+        padding-bottom: 200px;
+    }
+}
+@media (max-width: 768px){
+    .send{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .confidential .container{
+        width: 720px;
+    }
+    .confidential ul {
+        padding-bottom: 100px;
+    }
+    .confidential p{
+        font-size: 18px;
+    }
+    .confidential h2{
+        padding-top: 100px;
+    }
+    .confidential h4{
+        font-size: 22px;
+    }
+}
+@media (max-width: 500px){
+    .send{
+        padding-bottom: 150px;
+    }
+    .send img{
+        width: 160px;
+        height: 145px;
+        margin-top: 100px;
+    }
+    .send h2{
+        font-size: 30px;
+    }
+    .send h4{
+        font-size: 18px;
+        margin: 15px 0 40px;
+    }
+    .send .black-btn a{
+        width: 100%;
+    }
+    .send .black-btn a button{
+        font-size: 16px;
+    }
+    .confidential h2 {
+        margin-top: 40px;
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    .confidential h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .confidential p {
+        font-size: 16px;
+    }
+    .confidential ul {
+        padding-bottom: 50px;
+    }
+    .confidential ul li{
+        padding-bottom: 20px;
+    }
+}

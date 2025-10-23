@@ -12,17 +12,16 @@ for (let i = 0; i < forms.length; i++) {
         const type = e.target.querySelector("[name='type']")?.value;
 
         try {
-            const response = await fetch(`${SERVER_URL}/send/form`, {
+            await fetch(`${SERVER_URL}/send/form`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({name: name, phone: phone, type: type})
             });
-            // из объекта ответа извлекаем текст ответа
-            const responseText = await response.text();
-            const modalThanks = document.getElementById('modalThanks');
-            modalThanks.className += ' active';
 
-            setTimeout(() => { modalThanks.className = 'modal-thanks'; }, 5000);
+
+            setTimeout(() => {
+                window.location.href = `${SERVER_URL}/thanks.html`;
+            }, 5000);
 
         } catch (err){
             alert('Произошла ошибка, попробуйте позже');

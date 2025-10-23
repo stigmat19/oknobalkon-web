@@ -2065,7 +2065,49 @@ h5 {
     display: none;
 }
 
+/*изменения 16.10*/
+.send{
+    background-color: #fffaea;
+    text-align: center;
+    padding-bottom: 250px;
+    margin-top: 10px;
+}
 
+.send img{
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.send h4{
+    margin: 15px 0 80px;
+    font-size: 24px;
+}
+.wrap{
+    max-width: 1216px;
+    margin: 0 auto;
+}
+.confidential{
+    background-color: #fffaea;
+    margin-top: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+.confidential h2{
+    padding: 150px 0 40px;
+}
+.confidential h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.confidential p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.confidential ul{
+    padding-bottom: 250px;
+}
+.confidential ul li{
+    padding-bottom: 40px;
+}
 
 
 
