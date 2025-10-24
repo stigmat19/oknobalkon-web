@@ -245,6 +245,10 @@ window.addEventListener('click', (event) => {
 
 
 
+document.querySelector('.year').textContent = `${new Date().getFullYear()} OKNOBALKON. Все права защищены`;
+
+
+
 
 
 
